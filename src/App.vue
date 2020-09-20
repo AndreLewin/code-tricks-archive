@@ -1,14 +1,18 @@
 <template>
-  <div style="background-color: grey;">
-    <select v-model="selectedComponent">
-      <option disabled value="">Choose the component to test</option>
-      <option>FlexboxWithGutters</option>
-    </select>
-  </div>
+  <div>
+    <div style="background-color: grey;">
+      <select v-model="selectedComponent">
+        <option disabled value="">
+          Choose the component to test
+        </option>
+        <option>FlexboxWithGutters</option>
+      </select>
+    </div>
 
-  <template v-if="selectedComponent !== ''">
-    <component :is="selectedComponent"></component>
-  </template>
+    <template v-if="selectedComponent !== ''">
+      <component :is="selectedComponent" />
+    </template>
+  </div>
 </template>
 
 <script lang="ts">
