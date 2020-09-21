@@ -6,6 +6,7 @@
           Choose the component to test
         </option>
         <option>FlexboxWithGutters</option>
+        <option>FlexboxWithResponsiveWidth</option>
       </select>
     </div>
 
@@ -16,17 +17,19 @@
 </template>
 
 <script lang="ts">
-import FlexboxWithGutters from './components/css/FlexboxWithGutters.vue'
+import FlexboxWithGutters from './tricks/css/FlexboxWithGutters.vue'
+import FlexboxWithResponsiveWidth from './tricks/css/FlexboxWithResponsiveWidth.vue'
 
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'App',
   components: {
-    FlexboxWithGutters
+    FlexboxWithGutters,
+    FlexboxWithResponsiveWidth
   },
   data() {
     return {
-      selectedComponent: ''
+      selectedComponent: 'FlexboxWithResponsiveWidth'
     }
   }
 })
