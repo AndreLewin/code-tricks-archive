@@ -7,6 +7,7 @@
         </option>
         <option>FlexboxWithGutters</option>
         <option>FlexboxWithResponsiveWidth</option>
+        <option>ScrollIntoView</option>
       </select>
     </div>
 
@@ -19,13 +20,15 @@
 <script lang="ts">
 import FlexboxWithGutters from './tricks/css/FlexboxWithGutters.vue'
 import FlexboxWithResponsiveWidth from './tricks/css/FlexboxWithResponsiveWidth.vue'
+import ScrollIntoView from './tricks/browser/ScrollIntoView.vue'
 
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'App',
   components: {
     FlexboxWithGutters,
-    FlexboxWithResponsiveWidth
+    FlexboxWithResponsiveWidth,
+    ScrollIntoView
   },
   data() {
     return {
