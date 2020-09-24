@@ -7,6 +7,7 @@
         </option>
         <option>FlexboxWithGutters</option>
         <option>FlexboxWithResponsiveWidth</option>
+        <option>TruncateTextWithEllipsisIfOverflow</option>
         <option>ScrollIntoView</option>
         <option>EmbedPdfPreview</option>
       </select>
@@ -21,8 +22,11 @@
 <script lang="ts">
 import FlexboxWithGutters from './tricks/css/FlexboxWithGutters.vue'
 import FlexboxWithResponsiveWidth from './tricks/css/FlexboxWithResponsiveWidth.vue'
+import TruncateTextWithEllipsisIfOverflow from './tricks/css/TruncateTextWithEllipsisIfOverflow.vue'
 import ScrollIntoView from './tricks/browser/ScrollIntoView.vue'
 import EmbedPdfPreview from './tricks/browser/EmbedPdfPreview.vue'
+
+
 
 import { defineComponent } from 'vue';
 export default defineComponent({
@@ -30,12 +34,13 @@ export default defineComponent({
   components: {
     FlexboxWithGutters,
     FlexboxWithResponsiveWidth,
+    TruncateTextWithEllipsisIfOverflow,
     ScrollIntoView,
     EmbedPdfPreview
   },
   data() {
     return {
-      selectedComponent: 'EmbedPdfPreview'
+      selectedComponent: 'TruncateTextWithEllipsisIfOverflow'
     }
   }
 })
