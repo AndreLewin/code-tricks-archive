@@ -11,6 +11,7 @@
         <option>ScrollIntoView</option>
         <option>EmbedPdfPreview</option>
         <option>TooltipDemo</option>
+        <option>TooltipIfTextOverflowDemo</option>
       </select>
     </div>
 
@@ -27,6 +28,7 @@ import TruncateTextWithEllipsisIfOverflow from './tricks/css/TruncateTextWithEll
 import ScrollIntoView from './tricks/browser/ScrollIntoView.vue'
 import EmbedPdfPreview from './tricks/browser/EmbedPdfPreview.vue'
 import TooltipDemo from './tricks/components/TooltipDemo.vue'
+import TooltipIfTextOverflowDemo from './tricks/components/TooltipIfTextOverflowDemo.vue'
 
 
 import { defineComponent } from 'vue';
@@ -38,11 +40,12 @@ export default defineComponent({
     TruncateTextWithEllipsisIfOverflow,
     ScrollIntoView,
     EmbedPdfPreview,
-    TooltipDemo
+    TooltipDemo,
+    TooltipIfTextOverflowDemo
   },
   data() {
     return {
-      selectedComponent: 'TooltipDemo'
+      selectedComponent: 'TooltipIfTextOverflowDemo'
     }
   }
 })
