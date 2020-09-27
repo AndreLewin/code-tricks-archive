@@ -10,6 +10,7 @@
         <option>TruncateTextWithEllipsisIfOverflow</option>
         <option>ScrollIntoView</option>
         <option>EmbedPdfPreview</option>
+        <option>FetchAndDownload</option>
         <option>TooltipDemo</option>
         <option>TooltipIfTextOverflowDemo</option>
       </select>
@@ -29,7 +30,7 @@ import ScrollIntoView from './tricks/browser/ScrollIntoView.vue'
 import EmbedPdfPreview from './tricks/browser/EmbedPdfPreview.vue'
 import TooltipDemo from './tricks/components/TooltipDemo.vue'
 import TooltipIfTextOverflowDemo from './tricks/components/TooltipIfTextOverflowDemo.vue'
-
+import FetchAndDownload from './tricks/browser/FetchAndDownload.vue'
 
 import { defineComponent } from 'vue';
 export default defineComponent({
@@ -41,11 +42,12 @@ export default defineComponent({
     ScrollIntoView,
     EmbedPdfPreview,
     TooltipDemo,
-    TooltipIfTextOverflowDemo
+    TooltipIfTextOverflowDemo,
+    FetchAndDownload
   },
   data() {
     return {
-      selectedComponent: 'TooltipIfTextOverflowDemo'
+      selectedComponent: 'FetchAndDownload'
     }
   }
 })
