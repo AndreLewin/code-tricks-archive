@@ -10,6 +10,7 @@
         <option>TruncateTextWithEllipsisIfOverflow</option>
         <option>ScrollIntoView</option>
         <option>EmbedPdfPreview</option>
+        <option>FeatureFlag</option>
         <option>FetchAndDownload</option>
         <option>TooltipDemo</option>
         <option>TooltipIfTextOverflowDemo</option>
@@ -28,6 +29,7 @@ import FlexboxWithResponsiveWidth from './tricks/css/FlexboxWithResponsiveWidth.
 import TruncateTextWithEllipsisIfOverflow from './tricks/css/TruncateTextWithEllipsisIfOverflow.vue'
 import ScrollIntoView from './tricks/browser/ScrollIntoView.vue'
 import EmbedPdfPreview from './tricks/browser/EmbedPdfPreview.vue'
+import FeatureFlag from './tricks/browser/FeatureFlag.vue'
 import TooltipDemo from './tricks/components/TooltipDemo.vue'
 import TooltipIfTextOverflowDemo from './tricks/components/TooltipIfTextOverflowDemo.vue'
 import FetchAndDownload from './tricks/browser/FetchAndDownload.vue'
@@ -41,13 +43,14 @@ export default defineComponent({
     TruncateTextWithEllipsisIfOverflow,
     ScrollIntoView,
     EmbedPdfPreview,
+    FeatureFlag,
     TooltipDemo,
     TooltipIfTextOverflowDemo,
     FetchAndDownload
   },
   data() {
     return {
-      selectedComponent: 'FetchAndDownload'
+      selectedComponent: 'FeatureFlag'
     }
   }
 })
