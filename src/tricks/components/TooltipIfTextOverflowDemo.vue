@@ -2,11 +2,11 @@
   <div>
     <div class="spacer" />
     <div class="outline">
-      <TooltipIfTextOverflow text="This text will have an ellipsis and a tooltip at hover if the container is not large enough. Try reducing screen width." /></tooltipiftextoverflow>
+      <TooltipIfTextOverflow text="This text will have an ellipsis and a tooltip at hover if the container is not large enough. Try reducing screen width." />
     </div>
     <div class="spacer" />
     <div class="outline limited-width">
-      <TooltipIfTextOverflow text="This text will have an ellipsis and a tooltip at hover if the container is not large enough. Try reducing screen width." /></tooltipiftextoverflow>
+      <TooltipIfTextOverflow text="This text will have an ellipsis and a tooltip at hover if the container is not large enough. Try reducing screen width." />
     </div>
   </div>
 </template>
