@@ -1,0 +1,14 @@
+{
+	// https://code.visualstudio.com/docs/editor/userdefinedsnippets
+	// at each tab, the cursor goes from $1 to 2 to $3 etc
+	// $0 is always the last cursor position
+	"Log variable": {
+		"scope": "javascript,typescript",
+		"prefix": "lv",
+		"body": [
+			"console.log('${1:variableName} | $TM_FILENAME l$TM_LINE_NUMBER', $1);",
+			"$0"
+		],
+		"description": "Type lv -> TAB -> type variable name -> TAB"
+	}
+}
